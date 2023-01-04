@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD BOOK</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="title"><i class="fa-solid fa-book-open"></i><span> Book </span>List</div>
+  <p class="title-p">Add Your Book Information To Store The It Locally.</p>
+
+  <div class="note"></div>
+
+  <div class="add-book">
+    <div class="title-in">
+      <label for="title">Title</label>
+      <input type="text" id="title">
+    </div>
+
+    <div class="author-in">
+      <label for="author">Author</label>
+      <input type="text" id="author">
+    </div>
+
+    <div class="isbn-in">
+      <label for="ispn">ISBN#</label>
+      <input type="text" id="ispn">
+    </div>
+    <button class="but-add-book">Add Book</button>
+  </div>
+
+  <div class="information-book">
+    <div class="head">
+      <span class="title-book">Title</span>
+      <span class="author-book">Author</span>
+      <span class="isbn-book">ISBN</span>
+    </div>
+    <p class="no-books">No Books</p>
+    <div class="inners-inf"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

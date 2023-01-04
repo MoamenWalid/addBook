@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+.title {
+  color: #2b3e50;
+  width: fit-content;
+  margin: auto;
+  font-size: 55px;
+}
+
+.title > span {
+  color: #95a5a6;
+}
+
+.title-p {
+  color: #2b3e50;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: -20px;
+  font-size: 14px;
+}
+
+.note {
+  width: 550px;
+  margin: auto;
+  text-align: center;
+  padding: 3px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.note.failed {
+  background-color: #e91e63;
+}
+
+.note.right {
+  background-color: #4caf50;
+}
+
+.add-book,
+.information-book {
+  width: 550px;
+  margin: 20px auto;
+}
+
+.title-in,
+.author-in,
+.isbn-in {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #2b3e50;
+  font-weight: bold;
+}
+
+input[type= text] {
+  border: 2px solid #2b3e5030;
+  color: #2196f3;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-size: 15px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.but-add-book {
+  width: 100%;
+  padding: 6px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  background: #2b3e50;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+  margin-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.information-book .head,
+.information-book .inner {
+  position: relative;
+  width: 100%;  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.information-book .inner span {
+  text-transform: capitalize;
+}
+
+.information-book .head {
+  border-top: 1px solid #eee;
+  font-weight: bold;
+}
+
+.no-books {
+  color: #e91e63;
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+  font-size: 25px;
+}
+
+.d-none-p {
+  display: none;
+}
+
+.information-book .inner:nth-child(odd) {
+  background-color: #eee;
+}
+
+.information-book .inner > .close {
+  position: absolute;
+  background: red;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
